@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <style>
+        body {
+            font-family: "Poppins-Regular", sans-serif
+        }
+
+        .mySlides {
+            display: none
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="mainbar black card">
+            <a class="mainbar-item button padding-large hide-medium hide-large hide-extralarge right" href="javascript:void(0)"
+                onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="#" class="mainbar-item button padding-large" style="color:rgb(231, 62, 33) ;">OpenEge</a>
+            <a href="#" class="mainbar-item button padding-large hide-small">Home</a>
+            <div class="dropdown-hover hide-small">
+                <button class=" padding-large button" title="More">menu <i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-content mainbar-block card-4">
+                    <a href="#" class="mainbar-item button">HTML</a>
+                    <a href="#" class="mainbar-item button">CSS</a>
+                    <a href="#" class="mainbar-item button">JS</a>
+                    <a href="#" class="mainbar-item button">More</a>
+                </div>
+            </div>
+            <a href="#about" class="mainbar-item button padding-large hide-small">About</a>
+            <a href="#contact" class="mainbar-item button padding-large hide-small">Contact</a>
+
+            <div class="right hide-small hide-medium padding-large">
+                <button type="button" class="button block red" onclick="openForm()">sign up</button>
+                
+                <div class="form-popup" id="myForm">
+                    <form action="/action_page.php" class="form-container">
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                
+                        <button type="submit" class="btn">Login</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div id="navDemo" class="mainbar-block black hide hide-large hide-medium hide-extralarge navbar" style="margin-top:46px">
+        <a href="#" class="mainbar-item button padding-large" onclick="myFunction()">Home</a>
+        <a href="#about" class="mainbar-item button padding-large" onclick="myFunction()">About</a>
+        <a href="#contact" class="mainbar-item button padding-large" onclick="myFunction()">Contact</a>
+        <a href="#" class="mainbar-item button padding-large" onclick="myFunction()">More</a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content" style="max-width:2000px;margin-top:46px">
+        <!-- Hero section Automatic Slideshow Images -->
+        <div class="mySlides display-container center">
+            <div>
+                <img src="asst/earth-1756274_1920.jpg" class="hero-img">
+            </div>
+            
+            <div class="logo-container hide-small hide-medium">
+                <p class="display-topleft logo-text">OpenEge</p>
+                <p class="display-topleft logo-text1">Free Online Learning</p>
+            </div>
+            
+            
+            
+            <div class="search display-topmiddle hide-small hide-medium ">
+                <div class="search-container display-container">
+                    <input type="text" name="search" placeholder="Search..." class="search-input">
+                    <a href="#" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="pro display-bottommiddle container text-white padding-16 hide-small hide-medium">
+
+                <!-- Project Section -->
+                <div class=" row-padding container padding-16" id="projects">
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/html.png" alt="HTML" style="width:100%;">
+                        </div>
+                    </div>
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/css.jpg" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/js.png" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/c and c++.png" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" row-padding container " id="projects">
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/python.jpg" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/php.jpg" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/java.png" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/NET.jpg" alt="House" style="width:98%">
+                        </div>
+                    </div>
+                </div>
+
+                <div class=" row-padding container padding-16" id="projects">
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/angular_coditramuntana.png" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/react.png" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="pro-item col l3 m6 margin-bottom">
+                        <div class="display-container">
+                            <img src="asst/node js.jpg" alt="House" style="width:100%">
+                        </div>
+                    </div>
+                    <div class="pro-item col l3 m6 margin-bottom ">
+                        <div class="display-container">
+                            <img src="asst/sql.jpg" alt="House" style="width:98%">
+                        </div>
+                    </div>
+                </div><!-- end project -->
+
+            </div>
+
+        </div>
+
+        <!-- main Section -->
+        <div class="container content center padding-64" style="max-width:1420px" id="band">
+
+            <!-- Grid -->
+            <div class="row padding">
+
+                <!-- Blog entries -->
+                <div class="col l8 s12">
+
+                    <!-- Blog entry 1 -->
+                    <div class="container white margin padding-large">
+
+                        <div class="center">
+                            <h3>HTML Tutorial</h3>
+                            <h5>Title description, <span class="opacity">April 23, 2016</span></h5>
+                        </div>
+
+                        <div class="justify">
+                            <img src="asst/code-1839406_1920.jpg" alt="Men in Hats" style="width:100%" class="padding-16">
+                            <p><strong>HTML!</strong> HTML tutorial or HTML 5 tutorial provides basic and advanced concepts of HTML. Our HTML tutorial is developed for
+                            beginners and professionals. In our tutorial, every topic is given step-by-step so that you can learn it in a very easy
+                            way. If you are new in learning HTML, then you can learn HTML from basic to a professional level and after learning HTML
+                            with CSS and JavaScript you will be able to create your own interactive and dynamic website. But Now We will focus on
+                            HTML only in this tutorial.
+                            
+                            The major points of HTML are given below:
+                            
+                            HTML stands for HyperText Markup Language.
+                            HTML is used to create web pages and web applications.
+                            HTML is widely used language on the web.
+                            We can create a static website by HTML only.
+                            Technically, HTML is a Markup language rather than a programming language.</p>
+                            <p class="left"><button class="button white border" onclick="likeFunction(this)"><b>
+                                <i class="fa fa-thumbs-up"></i> Like</b></button></p>
+                            <p class="right"><button class="button black" onclick="myFunction('demo1')" id="myBtn"><b>Replies &nbsp;</b>
+                                            <span class="tag white">2</span></button></p>
+                            <p class="clear"></p>
+
+                            <!-- Example of comment field -->
+                            <div id="demo1" style="display:none">
+                                <div class="row">
+                                    <hr>
+                                    <div class="col l2 m3">
+                                        <img src="asst/girl_mountain.jpg" style="width:90px;">
+                                    </div>
+                                    <div class="col l10 m9">
+                                        <h4>Amber <span class="opacity medium">April 26, 2015, 10:52 PM</span></h4>
+                                        <p>Love your blog page! Simply the best! Lorem ipsum dolor sit amet, consectetur
+                                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                            aliqua.</p><br>
+                                    </div>
+                                </div>
+                                <div class="row margin-bottom">
+                                    <div class="col l2 m3">
+                                        <img src="asst/girl.jpg" style="width:90px;">
+                                    </div>
+                                    <div class="col l10 m9">
+                                        <h4>Angie <span class="opacity medium">April 23, 2015, 9:12 PM</span></h4>
+                                        <p>Love hats!!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog entry 2 -->
+                    <div class="container white margin padding-large">
+                        <div class="center">
+                            <h3>JavaScript Tutorial</h3>
+                            <h5>Title description, <span class="opacity">April 7, 2016</span></h5>
+                        </div>
+
+                        <div class="justify">
+                            <img src="asst/programming-1873854_1920.png" alt="Runway" style="width:100%" class="padding-16">
+                            <p><strong>JavaScript !</strong>
+                                Our JavaScript Tutorial is designed for beginners and professionals both !
+                            </p>
+                            <p>
+                            JavaScript is used to create client-side
+                            dynamic pages.
+                            
+                            JavaScript is an object-based scripting language which is lightweight and cross-platform.
+                            
+                            JavaScript is not a compiled language, but it is a translated language. The JavaScript Translator (embedded in the
+                            browser) is responsible for translating the JavaScript code for the web browser.</p>
+                            <p class="left"><button class="button white border" onclick="likeFunction(this)"><b><i
+                                            class="fa fa-thumbs-up"></i> Like</b></button></p>
+                            <p class="right"><button class="button black" onclick="myFunction('demo2')"><b>Replies
+                                        &nbsp;</b> <span class="tag white">3</span></button></p>
+                            <p class="clear"></p>
+
+                            <!-- Example of comment field -->
+                            <div id="demo2" style="display:none">
+                                <hr>
+                                <div class="row margin-bottom">
+                                    <div class="col l2 m3">
+                                        <img src="asst/girl_train.jpg" style="width:90px;">
+                                    </div>
+                                    <div class="col l10 m9">
+                                        <h4>Jane <span class="opacity medium">April 10, 2015, 7:22 PM</span></h4>
+                                        <p>That was a great runway show! Thanks for everything.</p>
+                                    </div>
+                                </div>
+                                <div class="row margin-bottom">
+                                    <div class="col l2 m3">
+                                        <img src="asst/bandmember.jpg" style="width:90px;">
+                                    </div>
+                                    <div class="col l10 m9">
+                                        <h4>John <span class="opacity medium">April 8, 2015, 10:32 PM</span></h4>
+                                        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet,
+                                            consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                    </div>
+                                </div>
+                                <div class="row margin-bottom">
+                                    <div class="col l2 m3">
+                                        <img src="asst/avatar_smoke.jpg" style="width:90px;">
+                                    </div>
+                                    <div class="col l10 m9">
+                                        <h4>Anja <span class="opacity medium">April 7, 2015, 9:12 PM</span></h4>
+                                        <p>Cant wait for the runway to start!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- END BLOG ENTRIES -->
+
+                <!-- About/Information menu -->
+                <div class="col l4">
+                    <!-- Posts -->
+                    <div class="white margin">
+                        <div class="container padding ">
+                            <h4>Popular Posts</h4>
+                        </div>
+                        <ul class="ul hoverable white">
+                            <li class="padding-16">
+                                <img src="asst/python.jpg" alt="Image" class="left margin-right"
+                                    style="width:50px">
+                                <span class="large">Python</span>
+                                <br>
+                                <span>Sed mattis nunc</span>
+                            </li>
+                            <li class="padding-16">
+                                <img src="asst/php.jpg" alt="Image" class="left margin-right"
+                                    style="width:50px">
+                                <span class="large">php</span>
+                                <br>
+                                <span>Praes tinci sed</span>
+                            </li>
+                            <li class="padding-16">
+                                <img src="asst/react.png" alt="Image" class="left margin-right"
+                                    style="width:50px">
+                                <span class="large">React</span>
+                                <br>
+                                <span>Ultricies congue</span>
+                            </li>
+                            <li class="padding-16">
+                                <img src="asst/angular_coditramuntana.png" alt="Image" class="left margin-right sepia"
+                                    style="width:50px">
+                                <span class="large">Angular</span>
+                                <br>
+                                <span>Lorem ipsum dipsum</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Subscribe -->
+                    <div class="white margin">
+                        <div class="container white">
+
+                            <p><input class="input border" type="text" placeholder="Enter e-mail" style="width:100%">
+                            </p>
+                            <p><button type="button"
+                                    onclick="document.getElementById('subscribe').style.display='block' "class="button block red">Subscribe</button></p>
+                            <p class="padding-small" style="font-family:Poppins-Light ;">Enter your e-mail and get notified on the latest blog posts.</p>
+                        </div>
+                    </div>
+                    <!-- follow me -->
+                    <div class="white margin">
+                        <div class="container xlarge padding">
+                            <i class="fa-brands fa-facebook-f hover-opacity"></i>
+                            <i class="fa-brands fa-instagram hover-opacity"></i>
+                            <i class="fa-brands fa-snapchat hover-opacity"></i>
+                            <i class="fa-brands fa-pinterest hover-opacity"></i>
+                            <i class="fa-brands fa-twitter hover-opacity"></i>
+                            <i class="fa-brands fa-linkedin-in hover-opacity"></i>
+                        </div>
+                    </div><!-- END About/Intro Menu -->
+
+                </div>
+
+            </div><!-- END GRID -->
+
+            <!-- full blog Section -->
+            <div class="justify">
+
+                <div class="row padding-64" id="menu">
+                    <div class="col l6 padding-large">
+                        <img src="asst/pexels-lilartsy-3235566.jpg" class="round image" alt="Menu" style="width:100%">
+                    </div>
+                    <div class="col l6 padding-large">
+                        <h1 class="center">professional photography</h1><br>
+                        <h5 class="center"></h5>
+                        <p class="large">The advent of digital photography has led to an explosion in photography, both as a creative
+                            art form
+                            and as a career
+                            choice as well. The basics of becoming a photographer are incredibly easy now; You can buy a camera and some
+                            equipment,
+                            learn photography from a multitude of free online photography courses, practice your photography skills,
+                            find a
+                            niche
+                            that you can focus on. You can indeed find your own answers to the question - how to become a professional
+                            photographer.
+                        </p>
+                        <p class="large hide-medium">professional female photographer
+                            However, though it sounds easy, the truth is not that simple. Photography is an extremely competitive field
+                            that
+                            requires you to have talent, skills, marketing acumen and discipline to make your mark as a professional
+                            photographer.
+                            To be successful, professional photographers need to not just be talented; they also need the tenacity to
+                            put in
+                            long
+                            hours, compete hard due to supply-demand imbalance and manage their business as an entrepreneur. Here is an
+                            extensive
+                            collection of great photography website templates for your reference.
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div class="row padding-64" id="menu">
+                    <div class="col l6 padding-large">
+                        <h1 class="center">Start a podcast</h1><br>
+                        <p class="large">
+                            Podcast listenership continues to grow tremendously every year. According to Edison Research, 40% of Americans aged 12+
+                            say they have listened to a podcast in 2017 while 24% say they have listened to one in the past month, up from 21% one
+                            year prior.<br>
+                        
+                            What this means for you as a business owner is that learning how to start a podcast is something you should consider to
+                            reach this expanding audience and grow your business through content marketing.<br>
+                        
+                            You don’t need to be a very technical person nor does it require a lot of money to learn how to start a podcast. This
+                            guide will be your A-Z, step-by-step walkthrough on how to get started with audio podcasting and why you should create a
+                            podcast. We’ll cover everything from the very technical to the abstract podcasting concepts.<br>
+                        </p>
+                        <p class="large">
+                            To start a podcast, at a bare minimum, you need to:<br>
+                            1. Come up with a concept (a topic, name, format and target length for each episode).<br>
+                            2. Design artwork and write a description to "brand" your podcast.<br>
+                            3. Record and edit your audio files (such as .MP3s). A microphone is recommended (more on equipment later).<br>
+                            4. Find a place to host them (such as a file host that specializes in podcast hosting, like Libsyn or Podbean).<br>
+                            5. Syndicate these audio files into what’s called an “RSS feed” so that they can be distributed through iTunes as well as
+                            downloaded or streamed on any device on-demand.<br>
+                        </p>
+                    </div>
+                    <div class="col l6 padding-large">
+                        <img src="asst/pexels-cottonbro-6883805.jpg" class="round image" alt="Menu" style="width:100%">
+                    </div>
+                </div>
+
+
+                
+            </div>
+
+            <!-- Project Section -->
+            <div class="row-padding container padding-24 hide-large hide-extralarge" id="projects">
+                <div class="col l3 m6 margin-bottom">
+                    <div class="display-container">
+                        <img src="asst/html.png" alt="House" style="width:100%">
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="display-container">
+                        <img src="asst/css.jpg" alt="House" style="width:100%">
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="display-container">
+                        <img src="asst/js.png" alt="House" style="width:100%">
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="display-container">
+                        <img src="asst/c and c++.png" alt="House" style="width:100%">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row-padding container padding-24 hide-large hide-extralarge" id="projects">
+                <div class="col l3 m6 margin-bottom">
+                    <div class="display-container">
+                        <img src="asst/python.jpg" alt="House" style="width:100%">
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="display-container">
+                        <img src="asst/php.jpg" alt="House" style="width:100%">
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="display-container">
+                        <img src="asst/Java .net.png" alt="House" style="width:100%">
+                    </div>
+                </div>
+                <div class="col l3 m6 margin-bottom">
+                    <div class="display-container">
+                        <img src="asst/sql.jpg" alt="House" style="width:98%">
+                    </div>
+                </div>
+            </div><!-- end project -->
+
+            <!-- About Section -->
+            <div class="container" style="padding:90px 16px" id="about">
+                <h3 class="center">ABOUT THE PLATFORM</h3>
+                <div class="row-padding center" style="margin-top:64px">
+                    <div class="quarter">
+                        <i class="fa-solid fa-desktop margin-bottom jumbo center"></i>
+                        <p class="large">Responsive</p>
+                        <p>the price of greatness is responsibility</p>
+                    </div>
+                    <div class="quarter">
+                        <i class="fa-solid fa-heart margin-bottom jumbo"></i>
+                        <p class="large">Passion</p>
+                        <p>There is no passion to be found playing small-in settling for a life that is less than the one you are capable of
+                        living</p>
+                    </div>
+                    <div class="quarter">
+                        <i class="fa-regular fa-gem margin-bottom jumbo"></i>
+                        <p class="large">Design</p>
+                        <p>design is intelligence made visible</p>
+                    </div>
+                    <div class="quarter">
+                        <i class="fa fa-gear margin-bottom jumbo"></i>
+                        <p class="large">Support</p>
+                        <p>Bringing great people onto your team intelligence is visible</p>
+                    </div>
+                </div>
+            </div>
+
+        </div><!-- END content -->
+        <!-- The Tour Section -->
+        <div class="black" id="tour">
+            <div class="container center content padding-64" style="max-width:800px">
+                <h2 class="wide center">TOUR DATES</h2>
+                <p class="opacity center"><i>Remember to book your tickets!</i></p><br>
+        
+                <div class="row-padding padding-32" style="margin:0 -16px">
+                    
+                    <div class="third margin-bottom">
+                        <img src="asst/JODHPUR.jpg" alt="Jodhpur" style="width:100%" class="hover-opacity">
+                        <div class="container white">
+                            <p><b>Jodhpur</b></p>
+                            <p class="opacity">Fri 2 sep 2022</p>
+                            <p>I'm gonna make him an offer he can't refuse.</p>
+                            <button class="button black margin-bottom"
+                                onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="third margin-bottom">
+                        <img src="asst/jaipur-1110x700.jpg" alt="Jaipur" style="width:100%" class="hover-opacity">
+                        <div class="container white">
+                            <p><b>Jaipur</b></p>
+                            <p class="opacity">Sat 26 jan 2023</p>
+                            <p>I'm gonna make him an offer he can't refuse.</p>
+                            <button class="button black margin-bottom"
+                                onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="third margin-bottom">
+                        <img src="asst/india-delhi-red-fort.jpg" alt="Delhi" style="width:100%" class="hover-opacity">
+                        <div class="container white">
+                            <p><b>Delhi</b></p>
+                            <p class="opacity">Sun 5 jun 2023</p>
+                            <p>I'm gonna make him an offer he can't refuse.</p>
+                            <button class="button black margin-bottom"
+                                onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ticket Modal -->
+        <div id="ticketModal" class="modal">
+            <div class="modal-content animate-top card-4">
+                <header class="container teal center padding-32">
+                    <span onclick="document.getElementById('ticketModal').style.display='none'"
+                        class="button teal xlarge display-topright">&times;</span>
+                    <h2 class="wide"><i class="fa fa-suitcase margin-right"></i>Tickets</h2>
+                </header>
+                <div class="container">
+                    <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+                    <input class="input border" type="text" placeholder="How many?">
+                    <p><label><i class="fa fa-user"></i> Send To</label></p>
+                    <input class="input border" type="text" placeholder="Enter email">
+                    <button class="button block teal padding-16 section right">PAY <i class="fa fa-check"></i></button>
+                    <button class="button red section"
+                        onclick="document.getElementById('ticketModal').style.display='none'">Close <i
+                            class="fa fa-remove"></i></button>
+                    <p class="right">Need <a href="#" class="text-blue">help?</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- The Contact Section -->
+        <div class="container content padding-32" style="max-width:1000px" id="contact">
+            <h2 class="wide center">CONTACT</h2>
+            <p class="opacity center"><i>Fan? Drop a note!</i></p>
+            <div class="row padding-32">
+                <div class="col m6 large margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Jodhpur, Raj.<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Phone: +91 151515<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                    <p class="left xlarge">
+                        <i class="fa-brands fa-facebook-f hover-opacity"></i>
+                        <i class="fa-brands fa-instagram hover-opacity"></i>
+                        <i class="fa-brands fa-snapchat hover-opacity"></i>
+                        <i class="fa-brands fa-pinterest hover-opacity"></i>
+                        <i class="fa-brands fa-twitter hover-opacity"></i>
+                        <i class="fa-brands fa-linkedin-in hover-opacity"></i>
+                    </p>
+        
+                </div>
+                <div class="col m6">
+                    <form action="/action_page.php" target="_blank">
+                        <div class="row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="half">
+                                <input class="input border" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div class="half">
+                                <input class="input border" type="text" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <input class="input border" type="text" placeholder="Message" required name="Message">
+                        <button class="button black section right" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- End Page Content -->
+    <!-- Footer -->
+    
+
+    <script>
+        //sign up
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+        // Automatic Slideshow - change image every 4 seconds
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 4000);
+        }
+
+        // Used to toggle the menu on small screens when clicking on the menu button
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("show") == -1) {
+                x.className += " show";
+            } else {
+                x.className = x.className.replace(" show", "");
+            }
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        var modal = document.getElementById('ticketModal');
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    
+    
+        // Toggle between hiding and showing blog replies/comments
+        document.getElementById("myBtn").click();
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf(" show") == -1) {
+                x.className += " show";
+            } else {
+                x.className = x.className.replace(" show", "");
+            }
+        }
+
+        function likeFunction(x) {
+            x.style.fontWeight = "bold";
+            x.innerHTML = "&#10003; Liked";
+        }
+    
+
+    </script>
+
+</body>
+
+</html>

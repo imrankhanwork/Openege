@@ -1,0 +1,14 @@
+Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+
+
+ElibraryDB
+
+
+cpanel mysql
+
+openegeDB
+imrankhan
+IK@pro20
+
+new pc
+Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;

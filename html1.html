@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <style>
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-family: "Poppins-Regular", sans-serif
+        }
+
+        body {
+            font-family: "Poppins-Regular", sans-serif;
+            font-size: 16px;
+        }
+
+        .half img {
+            margin-bottom: -6px;
+            margin-top: 16px;
+            opacity: 0.8;
+            cursor: pointer
+        }
+
+        .half img:hover {
+            opacity: 1
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Sidebar/menu -->
+    <nav class="sidebar red collapse top large padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="w3_close()" class="button hide-large hide-extralarge display-topmiddle"
+            style="width:100%;font-size:22px">Close Menu</a>
+        <div class="container">
+            <h3 class="padding-64"><b>OpenEge</b></h3>
+        </div>
+        <div class="mainbar-block">
+            <a href="#" onclick="w3_close()" class="mainbar-item button hover-white">Home</a>
+            <a href="#showcase" onclick="w3_close()" class="mainbar-item button hover-white">Showcase</a>
+            <a href="#services" onclick="w3_close()" class="mainbar-item button hover-white">Services</a>
+            <a href="#designers" onclick="w3_close()" class="mainbar-item button hover-white">Designers</a>
+            <a href="#packages" onclick="w3_close()" class="mainbar-item button hover-white">Packages</a>
+            <a href="#contact" onclick="w3_close()" class="mainbar-item button hover-white">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Top menu on small screens -->
+    <header class="container top hide-large hide-extralarge black xlarge padding">
+        <a href="javascript:void(0)" class="button black margin-right" onclick="w3_open()">&#9776;</a>
+        <span>Company Name</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="overlay hide-large hide-extralarge" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="main" style="margin-left:340px;margin-right:40px">
+
+        <!-- Header -->
+        <div class="container" style="margin-top:80px" id="showcase">
+            <h1 class="jumbo"><b>Interior Design</b></h1>
+            <h1 class="xxxlarge text-red"><b>Showcase.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="round">
+        </div>
+
+        <!-- Photo grid (modal) -->
+        <div class="row-padding">
+            <div class="half">
+                <img src="asst/angular_coditramuntana.png" style="width:100%" onclick="onClick(this)"
+                    alt="Concrete meets bricks">
+            </div>
+        </div>
+
+        <!-- Modal for full size images on click-->
+        <div id="modal01" class="modal black" style="padding-top:0" onclick="this.style.display='none'">
+            <span class="button black xxlarge display-topright">&times;</span>
+            <div class="modal-content animate-zoom center transparent padding-64">
+                <img id="img01" class="image"></img>
+                <p id="caption"></p>
+            </div>
+        </div>
+
+        <!-- Services -->
+        <div class="container" id="services" style="margin-top:75px">
+            <h1 class="xxxlarge text-red"><b>Services.</b></h1>
+            <hr style="width:50px;border:5px solid red" class="round">
+            <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
+            <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+        <!-- subscribe -->
+        <div class="white margin">
+            <div class="container white">
+        
+                <p><input class="input border" type="text" placeholder="Enter e-mail" style="width:100%">
+                </p>
+                <p><button type="button" onclick="document.getElementById('subscribe').style.display='block' "
+                        class="button block black">Subscribe</button></p>
+                <p class="padding-small" style="font-family:Poppins-Light ;">Enter your e-mail and get notified on the latest
+                    blog posts.</p>
+            </div>
+        </div>
+        <!-- The Contact Section -->
+        <div class="container content padding-32" style="max-width:1000px" id="contact">
+            <h2 class="wide center">CONTACT</h2>
+            <p class="opacity center"><i>Fan? Drop a note!</i></p>
+            <div class="row padding-32">
+                <div class="col m6 large margin-bottom">
+                    <i class="fa fa-map-marker" style="width:30px"></i> Jodhpur, Raj.<br>
+                    <i class="fa fa-phone" style="width:30px"></i> Phone: +91 151515<br>
+                    <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+                    <p class="left xlarge">
+                        <i class="fa-brands fa-facebook-f hover-opacity"></i>
+                        <i class="fa-brands fa-instagram hover-opacity"></i>
+                        <i class="fa-brands fa-snapchat hover-opacity"></i>
+                        <i class="fa-brands fa-pinterest hover-opacity"></i>
+                        <i class="fa-brands fa-twitter hover-opacity"></i>
+                        <i class="fa-brands fa-linkedin-in hover-opacity"></i>
+                    </p>
+        
+                </div>
+                <div class="col m6">
+                    <form action="/action_page.php" target="_blank">
+                        <div class="row-padding" style="margin:0 -16px 8px -16px">
+                            <div class="half">
+                                <input class="input border" type="text" placeholder="Name" required name="Name">
+                            </div>
+                            <div class="half">
+                                <input class="input border" type="text" placeholder="Email" required name="Email">
+                            </div>
+                        </div>
+                        <input class="input border" type="text" placeholder="Message" required name="Message">
+                        <button class="button black section right" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        </div><!-- End Page Content -->
+
+        <!-- End page content -->
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+        <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+                target="_blank" class="w3-hover-opacity">w3.css</a></p>
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+
+        // Modal Image Gallery
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+            var captionText = document.getElementById("caption");
+            captionText.innerHTML = element.alt;
+        }
+    </script>
+
+</body>
+
+</html>

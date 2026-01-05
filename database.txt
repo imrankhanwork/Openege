@@ -1,0 +1,17 @@
+openege.com
+
+DB Mysql
+database name : openwikx_dbtestone   
+user name : openwikx_userone  
+pass : J%l9=FN(D^L] 
+
+
+wp
+urer name ; openege-test
+pass: kv$!Kt3GEe^VO2VKXQ
+test@openege.com
+
+
+cpanel
+username : openwikx
+pass : i7TKwE5OpGny
